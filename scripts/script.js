@@ -20,7 +20,6 @@ function loadPost(id){
   });
 }
 $(document).ready(function(){
-
   $('.searchForSchemas > div').removeClass("ui-corner-all ui-shadow-inset");
   $('.searchForSchemas > div').addClass("input-new");
   $('.searchForSchemas > div').on('focus', function(){
@@ -40,7 +39,11 @@ $(document).ready(function(){
     var elements = hrefValue.split('_');
     var typeOfElement = elements[1];
     var valueOfElement = elements[2];
-    alert(typeOfElement+'-'+valueOfElement);
+    $.ajax({
+      data: {
+
+      },
+    });
   });
 
 });
