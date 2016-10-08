@@ -44,7 +44,7 @@ $(document).ready(function(){
       data: {
         elementType: typeOfElement,
         elementValue: valueOfElement,
-      },
+      }
     });
   });
 
