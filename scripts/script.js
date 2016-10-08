@@ -45,8 +45,6 @@ $(document).ready(function(){
         elementType: typeOfElement,
         elementValue: valueOfElement,
       },
-
-      
     });
   });
 
