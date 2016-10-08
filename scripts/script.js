@@ -42,8 +42,11 @@ $(document).ready(function(){
     $.ajax({
       type: 'POST',
       data: {
-
+        elementType: typeOfElement,
+        elementValue: valueOfElement,
       },
+
+      
     });
   });
 
