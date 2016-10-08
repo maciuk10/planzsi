@@ -20,7 +20,6 @@ function loadPost(id){
   });
 }
 $(document).ready(function(){
-
   $('.searchForSchemas > div').removeClass("ui-corner-all ui-shadow-inset");
   $('.searchForSchemas > div').addClass("input-new");
   $('.searchForSchemas > div').on('focus', function(){
@@ -41,9 +40,14 @@ $(document).ready(function(){
     var typeOfElement = elements[1];
     var valueOfElement = elements[2];
     $.ajax({
+      type: 'POST',
+      url: 'render.php',
       data: {
-
+        elementType: typeOfElement,
+        elementValue: valueOfElement,
       },
+      success: function(msg){
+      }
     });
   });
 
