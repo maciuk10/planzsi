@@ -40,7 +40,11 @@ $(document).ready(function(){
     var elements = hrefValue.split('_');
     var typeOfElement = elements[1];
     var valueOfElement = elements[2];
-    alert(typeOfElement+'-'+valueOfElement);
+    $.ajax({
+      data: {
+
+      },
+    });
   });
 
 });
