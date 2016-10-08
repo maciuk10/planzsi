@@ -47,7 +47,6 @@ $(document).ready(function(){
         elementValue: valueOfElement,
       },
       success: function(msg){
-        
       }
     });
   });
