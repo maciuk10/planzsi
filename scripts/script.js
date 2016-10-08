@@ -41,10 +41,14 @@ $(document).ready(function(){
     var valueOfElement = elements[2];
     $.ajax({
       type: 'POST',
+      url: 'render.php',
       data: {
         elementType: typeOfElement,
         elementValue: valueOfElement,
       },
+      success: function(msg){
+        
+      }
     });
   });
 
