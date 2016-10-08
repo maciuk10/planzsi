@@ -40,6 +40,7 @@ $(document).ready(function(){
     var typeOfElement = elements[1];
     var valueOfElement = elements[2];
     $.ajax({
+      type: 'POST',
       data: {
 
       },
