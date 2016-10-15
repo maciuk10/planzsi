@@ -19,6 +19,11 @@ function loadPost(id){
     $('#post-wrapper').html(html);
   });
 }
+
+$(window).ready(function(){
+  
+});
+
 $(document).ready(function(){
   $('.searchForSchemas > div').removeClass("ui-corner-all ui-shadow-inset");
   $('.searchForSchemas > div').addClass("input-new");
@@ -39,8 +44,13 @@ $(document).ready(function(){
     var elements = hrefValue.split('_');
     var typeOfElement = elements[1];
     var valueOfElement = elements[2];
-    console.log(typeOfElement);
-    console.log(valueOfElement);
+    var typeElements = {
+      "cl": ".class_plan",
+      "t": ".teacher_plan",
+      "cr": ".classroom_plan"
+    }
+
+    $(typeElements[typeOfElement]).attr('id', "plan"+"_"+typeOfElement+"_"+valueOfElement);
     $.ajax({
       type: 'POST',
       url: 'render.php',
@@ -49,7 +59,8 @@ $(document).ready(function(){
         elementValue: valueOfElement,
       },
       success: function(msg){
-        
+        var base = "#plan"+"_"+typeOfElement+"_"+valueOfElement+" .full_name";
+        $(base).html(msg);
       }
     });
   });
