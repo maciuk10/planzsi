@@ -21,7 +21,7 @@ function loadPost(id){
 }
 
 $(window).ready(function(){
-  
+
 });
 
 $(document).ready(function(){
