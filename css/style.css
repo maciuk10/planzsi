@@ -145,7 +145,7 @@
   text-align: center;
 }
 .class_name {
-  color: #054784 !important;
+  color: rgb(5, 71, 133) !important;
   font-weight: 300 !important;
 }
 .no_icon .ui-btn-icon-left:after {
@@ -169,4 +169,38 @@
 .login_btn {
   box-shadow: none !important;
   background-color: rgb(255, 255, 255) !important;
+}
+.full_name {
+  color: rgb(255, 255, 255) !important;
+  text-shadow: none !important;
+  border: 0px !important;
+  height: 49px !important;
+  line-height: 49px !important;
+}
+.collapsibleset {
+  border-radius: 0px !important;
+  border: 0px !important;
+  background-color: transparent !important;
+}
+
+.collapsibleset h3 {
+  color: rgb(5, 71, 133) !important;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(5, 71, 133) !important;
+}
+
+.collapsibleset a {
+  border: 0px !important;
+  color: rgb(5, 71, 133) !important;
+  font-family: 'Fira Sans', sans-serif !important;
+  font-weight: 300 !important;
+  background-color: rgb(255, 255, 255) !important;
+  font-size: 15px !important;
+  text-align: center !important;
+}
+.class_plan {
+  background-color: rgb(255, 255, 255) !important;
+}
+.collapsible_el {
+  margin-top: 0px !important;
 }

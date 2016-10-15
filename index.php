@@ -59,27 +59,55 @@
       </div>
     </div>
     <!-- Plan klasy -->
-    <div id="plan_cl_" data-role="page" data-title="Plan Klasy">
-      <div data-role="header">
-        <a href="#home" data-icon="home" data-iconpos="notext">Start</a>
+    <div id="plan_cl_" class="class_plan" data-role="page" data-title="Plan Klasy">
+      <div data-role="header" class="borderTransparent header-bottom" data-fullscreen="false" style="border-top: 0px; border-top-width: 0px" data-position="fixed">
+        <div class="ui-grid-a">
+          <div class="ui-block-a ui-block-mini-btn">
+            <a href="#home" data-role="button" role="button" class="dashboard-btn"><i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i></a>
+          </div>
+          <div class="ui-block-b ui-block-mini-form full_name fira_sans"></div>
+        </div>
       </div>
-      <div data-role="content"></div>
+      <div data-role="content" class="content">
+        <div data-role="collapsibleset" class="collapsibleset">
+          <div data-role="collapsible" class="collapsible_el" data-iconpos="none">
+            <h3>Poniedziałek</h3>
+            <p>I'm the expanded content.</p>
+          </div>
+          <div data-role="collapsible" class="collapsible_el" data-iconpos="none">
+            <h3>Wtorek</h3>
+            <p>I'm the expanded content.</p>
+          </div>
+          <div data-role="collapsible" class="collapsible_el" data-iconpos="none">
+            <h3>Środa</h3>
+            <p>I'm the expanded content.</p>
+          </div>
+          <div data-role="collapsible" class="collapsible_el" data-iconpos="none">
+            <h3>Czwartek</h3>
+            <p>I'm the expanded content.</p>
+          </div>
+          <div data-role="collapsible" class="collapsible_el" data-iconpos="none">
+            <h3>Piątek</h3>
+            <p>I'm the expanded content.</p>
+          </div>
+        </div>
+      </div>
       <div data-role="footer" data-position="fixed"></div>
     </div>
     <!-- Plan nauczyciela -->
-    <div id="plan_cl_" data-role="page" data-title="Plan Klasy">
+    <div id="plan_t_" class="teacher_plan" data-role="page" data-title="Plan Nauczyciela">
       <div data-role="header">
         <a href="#home" data-icon="home" data-iconpos="notext">Start</a>
       </div>
-      <div data-role="content"></div>
+      <div data-role="content" class="content"></div>
       <div data-role="footer" data-position="fixed"></div>
     </div>
     <!-- Plan sali -->
-    <div id="plan_cl_" data-role="page" data-title="Plan Klasy">
+    <div id="plan_cr_" class="classroom_plan" data-role="page" data-title="Plan Sali">
       <div data-role="header">
         <a href="#home" data-icon="home" data-iconpos="notext">Start</a>
       </div>
-      <div data-role="content"></div>
+      <div data-role="content" class="content"></div>
       <div data-role="footer" data-position="fixed"></div>
     </div>
 
